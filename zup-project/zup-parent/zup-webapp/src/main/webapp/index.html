@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="App">
+<head>
+<title ng-controller="AppCtrl" ng-bind-html="tituloApp.title"></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="utf-8"/>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+<!--JavaScript---------------------------------------------------- -- --> 
+<!-- Libs --> 
+<script src="js/lib/jquery/jquery-1.11.1.min.js"></script>
+<!-- inline styles related to this page 
+<!-- ace settings handler -->
+<script src="js/lib/ace/ace-extra.min.js"></script>
+<script src="js/lib/ace/ace-elements.min.js"></script>
+<script src="js/lib/jquery/jquery-ui.min.js"></script>
+<!-- Js de ambiente -->
+<script type="text/javascript" src="js/config/mensagens.js"></script>
+<script type="text/javascript" src="js/config/environment.js"></script>
+<!--  Útil -->
+<script src="js/config/util.js"></script>
+<!-- Angular -->
+<script type="text/javascript" src="js/lib/angular/angular.js"></script>
+<script type="text/javascript" src="js/lib/angular/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="js/lib/angular/checklist-model.js"></script>
+<script type="text/javascript" src="js/lib/angular/ng-table.js"></script>
+<script type="text/javascript" src="js/lib/angular/angular-route.js"></script>
+<script type="text/javascript" src="js/lib/angular/ng-bs-daterangepicker.js"></script>
+<script type="text/javascript" src="js/lib/angular/angular-moment.js"></script>
+<!-- Angular-UI -->
+<script type="text/javascript" src="js/lib/angular-ui/ui-bootstrap-tpls-1.1.2.min.js"></script>
+<!-- ANGULAR BLOCK UI -->
+<script type="text/javascript" src="js/lib/angular-block-ui/angular-block-ui.js"></script>
+<!-- ANGULAR CHOSEN -->
+<script type="text/javascript" src="js/lib/adityasharat-angular-chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/adityasharat-angular-chosen/angular-chosen.js"></script>
+<!-- Scripts do datepicker -->
+<script type="text/javascript" src="js/lib/moment.js"></script>
+<script type="text/javascript" src="js/lib/date-time/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/lib/date-time/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/lib/date-time/locales/bootstrap-datepicker.pt-BR.js"></script>
+<!-- libs js -->
+<script type="text/javascript" src="js/lib/angular/mask.js"></script>
+<script type="text/javascript" src="js/lib/angular/masks.min.js"></script>
+<script type="text/javascript" src="js/lib/angular/angular-br-filters.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap-3.2/js/bootstrap.min.js"></script>
+
+<!-- Angular app -->
+<script type="text/javascript" src="js/modules/app.js"></script>
+<script type="text/javascript" src="js/modules/app_run.js"></script>
+<script type="text/javascript" src="js/modules/app_directive.js"></script>
+<script type="text/javascript" src="js/modules/app_factory.js"></script>
+<script type="text/javascript" src="js/modules/app_config.js"></script>
+<script type="text/javascript" src="js/modules/app_filter.js"></script>
+<!-- Controllers -->
+<script type="text/javascript" src="js/controller/main/mainCtrl.js"></script>
+<script type="text/javascript" src="js/controller/main/headCtrl.js"></script>
+<script type="text/javascript" src="js/controller/main/footCtrl.js"></script>
+
+<script type="text/javascript" src="js/controller/product/productCtrl.js"></script>
+<!--  CSS -->
+<!-- ANGULAR CHOSEN -->
+<link rel="stylesheet" href="js/lib/adityasharat-angular-chosen/chosen.min.css">
+<link rel="image_src" href="js/lib/adityasharat-angular-chosen/chosen-sprite.png">
+<!-- ANGULAR BLOCK UI -->
+<link rel="stylesheet" href="js/lib/angular-block-ui/angular-block-ui.css" />
+<!-- ESTILOS DE CUSTOMIZACAO -->
+<link rel="stylesheet" href="css/style.css" />
+<!--CSS Bootstrap--------------------------------------------------------->
+<!--Libs ------------------------------------------------------------->
+<!-- bootstrap & fontawesome -->
+<link rel="stylesheet" href="js/lib/bootstrap-3.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="js/lib/bootstrap-3.2/css/bootstrap.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="js/lib/bootstrap-3.2/css/style.css">
+<link rel="stylesheet" href="css/datepicker.css" />
+<!-- page specific plugin styles -->
+<!-- text fonts -->
+<link rel="stylesheet" href="css/ace-fonts.css" />
+<!-- ace styles -->
+<link rel="stylesheet" href="css/ace.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="../css/ace-part2.min.css" />
+<![endif]-->
+<link rel="stylesheet" href="css/ace-skins.min.css" />
+<link rel="stylesheet" href="css/ace-rtl.min.css" />
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="../css/ace-ie.min.css" />
+<![endif]-->
+<link rel="stylesheet" href="css/ng-table.css" />
+<link rel="stylesheet" href="css/datepicker.css" />
+<link rel="stylesheet" href="css/customizacao.css" />
+</head>
+
+<body class="no-skin">
+	<!-- HEAD - Top Html -->
+	<div ng-controller="HeadCtrl">
+  		<dir-head></dir-head>
+	</div>
+	
+	<!-- MAIN - Middle Html -->
+	<div class="main-container" id="main-container">
+		<script type="text/javascript">
+        	try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+        </script>
+		<div class="slide-animate-container">
+			<div id="sidebar" class="sidebar responsive">
+				<ul class="nav nav-list">
+					<li class="" id="cadastrosBasicos">
+						<a href="" class="dropdown-toggle"> 
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text">Cadastros B&aacute;sicos</span> 
+							<b class="arrow fa fa-angle-down"></b>
+						</a> 
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="" id="product">
+								<a  href="#/product"> 
+									<i class="menu-icon fa fa-caret-right"></i>Produto
+								</a> 
+							</li>
+						</ul>
+					</li>
+                </ul>
+				<!-- /.nav-list -->
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+				<!-- /section:basics/sidebar.layout.minimize -->
+				<script type="text/javascript">
+                    try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+                </script>
+			</div>
+			<!-- ############################################################################################################ -->
+            <div class="main-content">
+                <!-- /section:basics/content.breadcrumbs -->
+                <div class="page-content">
+                    <!-- #section:settings.box -->
+                    <!-- /section:settings.box -->
+                    <div class="row">
+                    <div id="MsgPadrao"></div>
+                            <!-- PAGE CONTENT BEGINS -->
+                            <div class="col-xs-12" ng-view>
+                            <!-- PAGE CONTENT ENDS -->
+                        	</div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.page-content -->
+            </div>
+			<!-- /.main-content -->
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div>
+	</div>
+	<!-- /.main-container ---------------------------------------------------->
+	<!-- HEAD - Top Html -->
+	<div ng-controller="FootCtrl">
+  		<dir-foot></dir-foot>
+	</div>
+		
+</body>
+<footer>
+<!-- jquery load footer.html -->
+<script src="js/lib/ace/ace.min.js"></script>
+
+</footer>
+</html>

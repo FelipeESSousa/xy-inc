@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+/*Topo*/
+.h3-titulo-topo{
+	color: white; 
+	padding-left: 85px; 
+	margin-top: -29px;
+}
+
+@media (max-width: 480px) {
+	.h3-titulo-topo{
+		color: white; 
+		padding-left: 130px; 
+		margin-top: -29px;
+	}
+}
+
+/*Popup pesquisa Externa*/
+#id-popup-pesquisa-ext{
+	height: 100px !important;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none !important;
+}
+.espacoBotoes{
+    margin-left: 26%;
+}
+.configura-email-invalido{
+	margin-left: 2%;
+	color: red;
+	margin-top: 80%;
+}
+
+/******************************************************
+*   ALTERA A COR DO PLACEHOLDER DE CADA INPUT         *
+******************************************************/
+.alter-placeholder-color::-webkit-input-placeholder {
+    color:#D3D1D1 !important;
+}
+.alter-placeholder-color:-moz-placeholder {
+    color:#D3D1D1 !important;
+}
+.alter-placeholder-color::-moz-placeholder {
+    color:#D3D1D1 !important;
+}
+.alter-placeholder-color:-ms-input-placeholder {
+    color:#D3D1D1 !important;
+}
+
+/****************************************************
+*   COR TEXTS INPUT                                 *
+*****************************************************/
+.text-cor {
+    color: red;
+}
+
+/****************************************************
+*   COR TEXTS INPUT                                 *
+*****************************************************/
+.img-logo {
+    padding: 10px;
+}

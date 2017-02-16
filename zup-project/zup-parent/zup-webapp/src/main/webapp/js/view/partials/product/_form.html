@@ -1,0 +1,67 @@
+<div class="widget-box">
+  <form ng-disabled="desabilitaFormulario">
+    <div class="widget-header">
+      <h4 class="widget-title">Dados do Produto</h4>
+      <div class="widget-toolbar"></div>
+    </div>
+
+    <div class="widget-body">
+      <div class="widget-main">
+
+        <fieldset ng-disabled="desabilitaFormulario">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <label for="produto.idProduct">C&oacute;digo do Produto</label>
+              <input type="text" pattern="[0-9]*" class="form-control numberOnly alter-placeholder-color"
+                placeholder="Digite o c&oacute;digo" ng-model="produto.idProduct" maxlength="11" id="produto.idProduct"
+                onKeyPress="return numbersonly(this, event)" ng-disabled="true">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="produto.nmName">Nome</label>
+              <input type="text" class="form-control alter-placeholder-color" placeholder="Digite o Nome" ng-model="produto.nmName"
+                maxlength="150">
+            </div>
+            <div class="col-sm-6">
+              <label for="produto.dsDescription">Descrição</label>
+              <input type="text" class="form-control alter-placeholder-color" placeholder="Digite a Descrição"
+                ng-model="produto.dsDescription" maxlength="1000">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="produto.nmCategory">Categoria</label>
+              <input type="text" class="form-control alter-placeholder-color" placeholder="Digite o Categoria" ng-model="produto.nmCategory"
+                maxlength="150">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="produto.vlPrice">Preço</label>
+              <input type="text" class="form-control alter-placeholder-color" placeholder="Digite o Preço" ng-model="produto.vlPrice"
+                maxlength="150" onKeyPress="return numbersonly(this, event)" ondrag="return false;" ondrop="return false;" onpaste="return false;">
+            </div>
+          </div>
+        </fieldset>
+        <br class="clear-fix">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="row" style="padding-left: 14px; padding-top: 10px">
+  <a type="submit" class="btn btn-primary" ng-click="salvarOuAtualizar()" ng-show="botaoSalvar"
+    ng-disabled="acao!='novo' && acao!='editar'">
+    <i class="ace-icon fa fa-floppy-o icon-on-left bigger-110" /> Salvar
+  </a>
+  <a type="button" class="btn btn-danger" ng-click="removerPorId()" ng-show="botaoExcluir">
+    <i class="ace-icon fa fa-trash-o icon-on-left bigger-110" /> Excluir
+  </a>
+  <a type="button" class="btn btn-grey" href="#/product">
+    <i class="ace-icon fa fa-backward icon-on-left bigger-110" /> Voltar
+  </a>
+</div>
+

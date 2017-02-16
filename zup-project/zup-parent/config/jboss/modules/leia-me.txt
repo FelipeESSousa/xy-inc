@@ -1,0 +1,1 @@
+Os modulos desta pasta devem ser adicionados ao pacote modules do jboss as 7.1

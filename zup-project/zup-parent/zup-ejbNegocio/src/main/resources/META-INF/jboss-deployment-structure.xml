@@ -1,0 +1,12 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+  <deployment>
+    <dependencies>
+      <module name="deployment.zup-ejbDao.jar" />
+      <module name="javaee.api" />
+      <module name="javax.ejb.api" />
+      <module name="org.json.json" />
+      <module name="com.google.gson" />
+      <module name="org.hibernate" />
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>

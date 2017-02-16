@@ -1,0 +1,14 @@
+<!-- Copiar em  JBOSS_HOME/standalone/configuration/standalone.xml na tag <datasources> -->
+<datasource jndi-name="java:jboss/aplicacao-zup" pool-name="DeadpoolZup" enabled="true" use-java-context="true">
+    <connection-url>jdbc:oracle:thin:@localhost:1521:xe</connection-url>
+    <driver>oracleDriver</driver>
+    <pool>
+        <min-pool-size>0</min-pool-size>
+        <max-pool-size>20</max-pool-size>
+        <prefill>true</prefill>
+    </pool>
+    <security>
+        <user-name>BDZUP</user-name>
+        <password>BDZUP</password>
+    </security>
+</datasource>

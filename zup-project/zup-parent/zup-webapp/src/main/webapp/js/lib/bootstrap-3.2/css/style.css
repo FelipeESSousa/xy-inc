@@ -1,0 +1,49 @@
+body 
+{
+	/* background-image: url('../../../img/bg_geral.jpg'); */
+	background-color:#cccccc;
+}
+.divTopo {
+    background-color: #164579;
+}
+.txtTopo{
+
+	/*margin-left:40px;*/
+	/*margin-top:35px;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	/*position:absolute;*/
+	color:white;
+}
+
+.myContainer {
+  margin: 0 auto;
+  width: 100%;
+}
+.btnEspacamentoTop {
+	margin-top: 2%;
+}
+.barra-lateral {
+width: 260px;
+float: left;
+position: static;
+padding-left: 0;
+padding-right: 0;
+}
+
+
+.configura-li {
+	style:none;
+	
+}
+.configuracaoGridFuncionalidade {
+	text-align: center;
+}
+.no-padding-left {
+	padding-left: 0px;
+}
+.no-padding-right {
+	padding-right: 0px;
+}
+

@@ -1,5 +1,5 @@
-selinf-parent/selinf-ejbDao/ejbModule/
-selinf-parent/selinf-ejbNegocio/ejbModule/
+zup-parent/selinf-ejbDao/ejbModule/
+zup-parent/selinf-ejbNegocio/ejbModule/
 *.classpath
 *.project
 *.settings
@@ -17,5 +17,5 @@ obj/
 *.DS_Store
 /.gitignore~
 *.metadata
-selinf-parent/selinf-webapp/WebContent/*
+zup-parent/zup-webapp/WebContent/*
 *build.properties
